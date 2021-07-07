@@ -1,5 +1,5 @@
-import { BookI } from "./books";
+import { IBooksStore } from "./book-store";
 
 export interface appStateI {
-    book:  BookI;
+    booksState:  IBooksStore;
 }

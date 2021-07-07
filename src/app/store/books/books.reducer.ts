@@ -1,14 +1,16 @@
-import { createReducer, on } from "@ngrx/store";
-import { BookI } from "src/app/core/interfaces";
-import { updateBook, updateName } from ".";
+import { createReducer, on } from '@ngrx/store';
+import { BookI, IBooksStore } from 'src/app/core/interfaces';
+import { addBook, updateBook, updateName } from './books.action';
 
-const INITIAL_STATE: BookI = {
-    name: '',
-    author: ''
-  };
-  
-  export const booksReducer = createReducer(
-    INITIAL_STATE,
-    on(updateBook, (state, { name, author }) => ({ name, author })),
-    on(updateName, (state, { name }) => ({ ...state, name }))
-  );
+const INITIAL_STATE: IBooksStore = {
+  books: [],
+};
+
+export const booksReducer = createReducer(
+  INITIAL_STATE,
+  on(addBook, (state, action) => ({
+    ...state,
+    books: [...state.books, action.newBook],
+  })),
+  on(updateName, (state, { name }) => ({ ...state, name }))
+);
