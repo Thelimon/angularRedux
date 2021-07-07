@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let book of books$ | async ">
+        Nombre : {{ book.name }}, Description: {{ book.description }}
+    </li>
+</ul>
