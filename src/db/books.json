@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Cien años de soledad",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "pages": 471,
+      "publicationDate": 1967
+    },
+    {
+      "id": 2,
+      "name": "El retrato de Dorian Gray",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "pages": 297,
+      "publicationDate": 1890
+    },
+    {
+      "id": 3,
+      "name": "La montaña mágica",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "pages": 1056,
+      "publicationDate": 1924
+    },
+    {
+      "id": 4,
+      "name": "dejad que los niños vengan a mi",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "pages": 361,
+      "publicationDate": 2019
+    },
+    {
+      "id": 5,
+      "name": "El perfume",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "pages": 255,
+      "publicationDate": 1985
+    },
+    {
+      "id": 6,
+      "name": "Las penas del joven Werther",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "pages": 176,
+      "publicationDate": 1774
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    }
+  ]
+}
