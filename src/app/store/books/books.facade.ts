@@ -9,6 +9,7 @@ import { booksSelector } from './books.selector';
 export class BooksFacade {
 
 public readonly books$ = this._store.select(booksSelector)
+
 constructor(private readonly _store: Store<appStateI>) { }
 
 }
