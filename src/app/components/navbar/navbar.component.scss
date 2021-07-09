@@ -10,9 +10,12 @@ ul{
     li{
         margin: 0 1.3rem;
         a{
+            padding: .5rem .5rem;
+            border-radius: 10px;
             &:hover{
                 background-color: blue; 
-                transition: all 1s ease-out;
+                transition: all .3s ease-out;
+                color: white;
             }
         }
     }

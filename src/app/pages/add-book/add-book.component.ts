@@ -7,6 +7,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./add-book.component.scss'],
 })
 export class AddBookComponent implements OnInit {
+  currentDate: Date = new Date();
+
   constructor() {}
 
   bookForm = new FormGroup({
@@ -22,16 +24,22 @@ export class AddBookComponent implements OnInit {
     ]),
     bookDescription: new FormControl('', [
       Validators.required,
-      Validators.minLength(1),
+      Validators.minLength(20),
       Validators.maxLength(50),
     ]),
     bookPages: new FormControl('', [
       Validators.required,
-      Validators.minLength(10),
+      Validators.minLength(1),
+      Validators.min(1),
+      Validators.maxLength(4),
+      Validators.max(3000)
     ]),
     bookYear: new FormControl('', [
       Validators.required,
       Validators.minLength(1),
+      Validators.maxLength(4),
+      Validators.min(1),
+      Validators.max(this.currentDate.getFullYear())
     ])
   });
 
